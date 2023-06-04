@@ -1,0 +1,10 @@
+terminal length 0
+iol-rtr157-02#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+iol-rtr157-02(config)#logging buffered 30000
+iol-rtr157-02(config)#end
+iol-rtr157-02#wr mem
+Building configuration...
+
+  [OK]
+iol-rtr157-02#
