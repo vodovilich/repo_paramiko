@@ -1,6 +1,6 @@
 
-iol-rtr157-01#show run | i hostname 
-hostname iol-rtr157-01
-iol-rtr157-01#show clock 
-19:18:28.587 EET Sun Jun 4 2023
-iol-rtr157-01#
+iol-rtr157-02#show run | i hostname 
+hostname iol-rtr157-02
+iol-rtr157-02#show clock 
+20:52:54.432 EET Mon Aug 7 2023
+iol-rtr157-02#

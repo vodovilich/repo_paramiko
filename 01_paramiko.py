@@ -2,8 +2,8 @@
 
 import paramiko, getpass, time
 
-devices = {'iol-01': {'ip': '192.168.100.13'}, 
-           'iol-02': {'ip': '192.168.100.12'}}
+devices = {'iol-01': {'ip': '192.168.100.6'}, 
+           'iol-02': {'ip': '192.168.100.7'}}
 commands = ['show run | i hostname \n', 'show clock \n']
 username = "gandalf"
 password = getpass.getpass('Password: ')
@@ -31,3 +31,12 @@ for device in devices.keys():
 
 
     new_connection.close()            
+
+"""
+OUTPUT GOVNO:
+Password: 
+b'iol-rtr157-02#show run | i hostname \r\nhostname iol-rtr157-02\r\niol-rtr157-02#'
+b'show clock \r\n21:37:00.057 EET Mon Aug 7 2023\r\niol-rtr157-02#'
+b'\r\niol-rtr157-01#show run | i hostname \r\nhostname iol-rtr157-01\r\niol-rtr157-01#'
+b'show clock \r\n21:37:04.655 EET Mon Aug 7 2023\r\niol-rtr157-01#'
+"""
